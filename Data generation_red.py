@@ -39,7 +39,7 @@ class EnhancedVisualDustSimulator:
             return 0.0
 
         thickness_m = concentration_g_m2 / self.dust_bulk_density
-        thickness_um = thickness_m * 1e7
+        thickness_um = thickness_m * 1e6
         optical_depth = self.extinction_coef * thickness_um / 1000
 
 
